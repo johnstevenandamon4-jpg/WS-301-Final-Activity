@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Student Registration</h1>
+        <p>Please fill in all required information.</p>
+
+        <form id="registrationForm" novalidate>
+            <label for="studentId">Student ID</label>
+            <input type="text" id="studentId" data-label="Student ID">
+            <small class="error-message"></small>
+
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" data-label="Full Name">
+            <small class="error-message"></small>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" data-label="Email">
+            <small class="error-message"></small>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" data-label="Phone Number"
+                   placeholder="09XXXXXXXXX">
+            <small class="error-message"></small>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob">
+            <small class="error-message"></small>
+
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <small class="error-message"></small>
+
+            <label for="program">Program</label>
+            <select id="program">
+                <option value="">Select Program</option>
+                <option value="BSIT">BS Information Technology</option>
+                <option value="BSCS">BS Computer Science</option>
+                <option value="BSIS">BS Information Systems</option>
+            </select>
+            <small class="error-message"></small>
+
+            <label for="yearLevel">Year Level</label>
+            <select id="yearLevel">
+                <option value="">Select Year Level</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+            <small class="error-message"></small>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" data-password="main">
+            <small class="error-message"></small>
+
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" data-password="confirm">
+            <small class="error-message"></small>
+
+            <button type="button" id="togglePassword">Show Passwords</button>
+
+            <label for="address">Address</label>
+            <textarea id="address" rows="3"></textarea>
+            <small class="error-message"></small>
+
+            <label class="agreement">
+                <input type="checkbox" id="agreement">
+                I agree to the terms and conditions.
+            </label>
+            <small id="agreementError" class="error-message"></small>
+
+            <button type="submit">Register</button>
+            <button type="reset">Reset Form</button>
+
+            <p id="successMessage" role="status"></p>
+        </form>
+    </div>
+</body>
+</html>
+```
